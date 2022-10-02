@@ -6,15 +6,15 @@ import "erc721a/contracts/ERC721A.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 
-contract BneNFT is ERC721A, Ownable {
+contract bneNFT is ERC721A, Ownable {
 
-    uint public price = 0.02 ether;
+    uint public price = 0 ;
     uint public maxSup = 5000;
     uint public maxMint = 5;
     bytes32 root;
     bool private isSale;
     mapping(address => uint) private mintedCount;
-    string private URIPrefix ="bafybeievqtp4drfbx5psvzel6tnq4eoxpwkaufawv7fov3qyf74k4hz7hq/";
+    string private URIPrefix ="ipfs://bafybeievqtp4drfbx5psvzel6tnq4eoxpwkaufawv7fov3qyf74k4hz7hq/";
     string private URISuffix = ".json";
 
     constructor() ERC721A ("BNEDAO", "BNE") {
@@ -39,10 +39,11 @@ contract BneNFT is ERC721A, Ownable {
     }
 
     function publicMint(uint amount) onlyOrigin external payable {
+        // _price = price;
         require(isSale, "mint not active");
-        require(msg.value >= amount * price);
-        require(totalSupply() + amount <= maxSup);
         require(mintedCount[msg.sender] + amount <= 5);
+        require(totalSupply() + amount <= maxSup);
+        require(msg.value >= amount * price,"pay price");
         mintedCount[msg.sender] += amount;
         _safeMint(msg.sender, amount);
     }
@@ -63,3 +64,5 @@ contract BneNFT is ERC721A, Ownable {
     }
 
 }
+
+
