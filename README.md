@@ -10,3 +10,8 @@ Kullanılan Teknolojiler:
 • Nft.storage
 • Ipfs
 • CID
+
+Ekran Görüntüleri:
+https://im.ge/a/kuthubhane.QksLC/?sort=date_desc&page=1
+
+Website Link: https://kuthubhane.vercel.app/
