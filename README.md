@@ -9,7 +9,6 @@ Kullanılan Teknolojiler:
 • Metadata
 • Nft.storage
 • Ipfs
-• CID
 
 Ekran Görüntüleri:
 https://im.ge/a/kuthubhane.QksLC/?sort=date_desc&page=1
