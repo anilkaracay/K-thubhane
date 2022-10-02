@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+
+    <title>Kuthubhane - Egitimde Bir Harf Ol</title>
+  </head>
+  <body>
+    <script>
+        document.getElementById('connect-button')/addEventListener('click', event => {
+            let account;
+
+            ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+                account = accounts[0];
+                console.log(account);
+
+                ethereum.request({method: 'eth_getBalance' , params: [account, 'latest']}).then(result =>{
+                     console.log(result);
+                }) 
+            })
+        })
+    </script>
+    
+    <div class="container">
+
+        <button id="connect-button">Connect Metamask</button>
+
+        <header class="main-header">
+        
+                    <div>
+                        <h1>Kuthubhane</h1>
+                        <h4>Egitimde Bir Kitap Ol</h4>
+                    </div>
+                    
+                    <img
+                        src="logo.png"
+                        alt="classroom 1"
+                        width="300"
+                        height="300"
+                        class="post-img"
+                    />
+                  
+            <!-- <div class="clear"></div> -->
+        </header>
+        
+
+        <article>
+            <div class="Vizyon">
+                <img
+                src="vizyon2.jpg"
+                alt="classroom 1"
+                width="300"
+                height="300"
+                class="post-img"
+                />
+                <div class="Vizyon_text">
+                    <h2>Birlikte, Birikerek, Ileriye...</h2>
+                    <p>Kuthubhane, egitimde imkan vermeye, teknoloji okuryazarligini gelistirmeye ve bireylere sirtlarini dayayabilecekleri bir yapi sunmaya yonelik tasarlanmis bir para fonudur.</p>
+                    <p>Kripto-varlik alisverislerinden kisilerin onayiyla tahsis edilecek kucuk meblalarin birikmesiyle olusturulacak olan Kuthubhane, biriken sayisiz "kitaplarin" cesitli egitim servilserinde kullanilmasi sonucu bu alanda ilerlemeyi hedeflemektedir.</p>
+                    
+                    
+                </div>
+                <a class="btn btn--big" href="#">Bir harf ol</a>
+            </div>
+
+            
+
+
+
+            
+
+            <div class="DAO">
+
+                
+                
+                
+
+                <h2 class="dao_slogan">Sayfalarimiz Kadar Konusalim</h2>
+
+                <div class="dao_text">
+                    <div class="dao_div1">
+                        <p>Kuthubhanenin kitaplarinin imkan yoksunlarina imkan saglamasi fonun akisinda soz sahibi olacak DAO sayesinde acikca, seffaf ve mantik cercevesinde gerceklesecektir. DAO'nun alacagi kararlar:</p>
+                        
+                    </div>
+                    
+                    <ul class="dao-list">
+                        <li>
+                            <p>Egitim gonullulerine oz gelisim icin firsat,</p>
+                        </li>
+                        <li>
+                            <p>Maddi sorunlar ve sosyo-kulturel problemler sonucu egitim haklarindna olan ogrencilere destek,</p>
+                        </li>
+                        <li>
+                            <p>Egitim araclarinin insa ve gelistirmesinde gorev yapan emektarlara isthidam, </p>
+                        </li>
+                        
+                    </ul>
+                    <p>kanallarina Kuthubhaneden kaynak akisinin ne sekilde gerceklesecegini belirleyecektir.</p>
+                </div>
+
+                <img
+                src="dao2.jpg"
+                alt="dao_meeting 1"
+                width="600"
+                height="400"
+                class="post-img"
+                />
+                
+            </div>
+
+            <div class="Odullendirme">
+
+                <p class="odullendirme_slogan">Birlikte Buyuyelim </p>
+
+                <p class="odullendirme_slogan_text">Kutubhane insa ettigi okuryazar ekosistemin her bir bireyine sagliyacagi, cesitli eylemler sonucu seviyelerinin artacagi ntt'ler araciligiyla hem sistem icerisinde sistem icerisinde buyumeyi ve bireylerin kisisel hayatinda gelisimi, ilerlemeyi hedeflemektedir.</p>
+
+                <p class="ogrenci_header">Ogrenci:</p>
+
+                
+
+                <div class = "ogrenci_nft_resimler">
+                    <img
+                    src="ogrenci1.jpeg"
+                    alt="dao_meeting 1"
+                    width="300"
+                    height="300"
+                    class="post-img"
+                    />
+    
+                    <img
+                    src="ogrenci2.jpeg"
+                    alt="dao_meeting 1"
+                    width="300"
+                    height="300"
+                    class="post-img"
+                    />
+    
+                    <img
+                    src="ogrenci3.jpeg"
+                    alt="dao_meeting 1"
+                    width="300"
+                    height="300"
+                    class="post-img"
+                    />
+                </div>
+
+                <div class="ogrenci_levels">
+                    <p>level 1</p>
+                    <p>level 5</p>
+                    <p>level 20</p>
+                </div>
+
+                
+
+                <div class="ogrenci_text">
+                    <p>Ogrenciler icin tahsis edilecek ntt'lerin saglayagi faydalar icerisinde:</p>
+                    <ul>
+                        <li>
+                            <p>Hem offline hem online gerceklesecek ozel egitim hizmetlerinden yararlanma sansi</p>
+                        </li>
+                        <li>
+                            <p>Sistemin discord sunucusunda aktif iletisim kurmasini saglayacak rol dagitimi</p>
+                        </li>
+                        <li>
+                            <p>Kuthubhane DAO'sunda soz hakki</p>
+                        </li>
+                        <li>
+                            <p>Seminerler, konferanslar gibi entellektuel birikimi buyutmeye yonelik etkinliklere katilim imkani</p>
+                        </li>
+                        <li>
+                            <p>Kariyer gelisim danismanligi</p>
+                        </li>
+                        <li>
+                            <p>Cikma ihtimali olan tokenden airdrop ihtimali</p>
+                        </li>
+                        <li>
+                            <p>Cesitli girismlerde yatirimci kurum ile baglanti saglayacak araci bir kuruma erisim</p>
+                        </li>
+                        <p>bulunmaktadir.</p>
+                        <div class="ogrenci_bottom">
+                            <p>Ntt seviyelerinin artmasiyla birlikte ogrencilerin servislere olan erisimi giderek buyuyecek ve sistem yuksek seviyeli sagladigi fazladan erisim ile ogrencileri daha fazla odullendirecektir.</p>
+                            <p>Ntt seviyelerindeki gelisim ogrencilerin egitimlere aktif katilimi ile olacaktir.</p>
+                        </div>
+                        
+                    </ul>
+                </div>
+
+                <p class="egitimci_header">Egitmen:</p>
+                <div class = "egitmen_nft_resimler">
+                    <img
+                    src="egitmen1.jpeg"
+                    alt="dao_meeting 1"
+                    width="300"
+                    height="300"
+                    class="post-img"
+                    />
+    
+                    <img
+                    src="egitmen2.jpeg"
+                    alt="dao_meeting 1"
+                    width="300"
+                    height="300"
+                    class="post-img"
+                    />
+    
+                    <img
+                    src="egitmen3.jpeg"
+                    alt="dao_meeting 1"
+                    width="300"
+                    height="300"
+                    class="post-img"
+                    />
+                </div>
+
+                <div class="egitimci_levels">
+                    <p>level 1</p>
+                    <p>level 5</p>
+                    <p>level 20</p>
+                </div>
+
+                
+                
+                <div class="egitimci_text">
+                    <p>Egitmenler icin tahsis edilecek ntt'lerin saglayagi faydalar icerisinde:</p>
+                    <ul>
+                        <li>
+                            <p>Hem offline hem online gerceklesecek ozel egitimlerden yararlanma ve bu egitimlerde rol alma sansi</p>
+                        </li>
+                        <li>
+                            <p>Sistemin discord sunucusunda aktif iletisim kurmasini saglayacak rol dagitimi</p>
+                        </li>
+                        <li>
+                            <p>Kuthubhane DAO'sunda soz hakki</p>
+                        </li>
+                        <li>
+                            <p>Cikma ihtimali olan tokenden airdrop ihtimali</p>
+                        </li>
+                        <p>bulunmaktadir.</p>
+                        <div class="egitimci_bottom">
+                            <p>Ntt seviyelerinin artmasiyla birlikte egitmenlerin servislere olan erisimi giderek buyuyecek ve sistem yuksek seviyeli sagladigi fazladan erisim ile ogrencileri daha fazla odullendirecektir.</p>
+                            <p>Ntt seviyelerindeki gelisim egitmenlerin egitimlerde aktif rol almalari ile olacaktir.</p>
+                        </div>
+                        
+
+
+                    </ul>
+                </div>
+
+                <p class="yatirimci_header">Yatirimci:</p>
+
+                <div class = "yatirimci_nft_resimler">
+                    <img
+                    src="foncu1.jpeg"
+                    alt="dao_meeting 1"
+                    width="300"
+                    height="300"
+                    class="post-img"
+                    />
+    
+                    <img
+                    src="foncu2.jpeg"
+                    alt="dao_meeting 1"
+                    width="300"
+                    height="300"
+                    class="post-img"
+                    />
+    
+                    <img
+                    src="foncu3.jpeg"
+                    alt="dao_meeting 1"
+                    width="300"
+                    height="300"
+                    class="post-img"
+                    />
+                </div>
+
+                <div class="yatirimci_levels">
+                    <p>level 1</p>
+                    <p>level 5</p>
+                    <p>level 20</p>
+                </div>
+
+
+                <div class="yatirimci_text">
+                    <p>Yatirimcilar icin tahsis edilecek ntt'lerin saglayagi faydalar icerisinde:</p>
+                    <ul>
+                        <li>
+                            <p>Sistemin discord sunucusunda aktif iletisim kurmasini saglayacak rol dagitimi</p>
+                        </li>
+                        <li>
+                            <p>Sistemin discord sunucusunda aktif iletisim kurmasini saglayacak rol dagitimi</p>
+                        </li>
+                        <li>
+                            <p>Kuthubhane bunyesi altinda gelistirilen projelerde isim ve reklam haklari</p>
+                        </li>
+                        <li>
+                            <p>Kuthubhane bunyesinde gerceklestirilen projeler icerisinden olmak uzere yatirim destegi</p>
+                        </li>
+                        <li>
+                            <p>Kuthubhane bunyesinde gerceklesterilen projelerde hissedar olma kolayligi</p>
+                        </li>
+                        <p>bulunmaktadir.</p>
+                        <div class="yatirimci_bottom">
+                            <p>Ntt seviyelerinin artmasiyla birlikte yatirimcilarim servislere olan erisimi giderek buyuyecek ve sistem yuksek seviyeli sagladigi fazladan erisim ile ogrencileri daha fazla odullendirecektir.</p>
+                            <p>Ntt seviyelerindeki gelisim yatirimcilarin yaptigi yatirim miktarinndaki artis ile olacaktir.</p>
+                        </div>
+                        
+
+                </div>
+
+            </div>
+            
+        </article>
+
+
+    </div>
+  </body>

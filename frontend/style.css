@@ -1,0 +1,242 @@
+* {
+    /* border-top: 10px solid #1098ad; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.container {
+  width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.article {
+    font-family: "Inter", sans-serif;
+    line-height: 8px;
+    
+}
+
+
+
+
+.btn:link,
+.btn:visited {
+  background-color: #7f0808;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #ab1111a6;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  margin-left: 420px;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  
+}
+
+.brand {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-left: 40px;
+}
+
+.Vizyon {
+    padding-top: 20px;
+    color:#fff;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+    background-color:#983939
+}
+
+.Vizyon_text {
+    width: 300px;
+    display: grid;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+
+
+.DAO {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.dao_slogan{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: #7f0808;
+    
+}
+
+.DAO img {
+    display:flex;
+    align-items:center;
+    margin-left: 270px;
+        
+}
+
+.dao_text {
+    width: 600px;
+    margin-left: 270px;
+}
+
+.dao_div1 {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dao_list {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-top: 8px;
+}
+
+.DAO p {
+    margin-top: 8px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #ECEFF1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: #263238;
+}
+
+.ogrenci_nft_resimler {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.egitmen_nft_resimler {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.yatirimci_nft_resimler {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.odullendirme_slogan{
+    font-weight: 600;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: #7f0808;
+    margin-bottom: 50px;
+}
+
+.ogrenci_header, .egitimci_header, .yatirimci_header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color:#7f0808;
+    margin-bottom: 40px;
+}
+
+.ogrenci_levels, .egitimci_levels, .yatirimci_levels {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.odullendirme_slogan_text {
+    margin-bottom: 20px;
+
+}
+
+.ogrenci_bottom, .egitimci_bottom, .yatirimci_bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ogrenci_nft_resimler img, .egitmen_nft_resimler img, .yatirimci_nft_resimler img{
+    border-radius: 50%;
+}
+
+ #connect-button:link,
+#connect-button:visited {
+  background-color: #7f0808;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: inline-block;
+  border-radius: 100px;
+}
+
+#connect-button:hover,
+#connect-button:active {
+  background-color: #ab1111a6;
+}
+
+#connect-button {
+    color:#fff;
+    background-color: #7f0808;
+    display: flexbox;
+    align-items: center;
+    justify-content: left;
+    width: 120px;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-top: 20px;
+    margin-bottom: 10px; 
+  } 
